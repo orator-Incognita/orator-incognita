@@ -1,0 +1,34 @@
+{
+  "Common": {
+    "Global": {
+      "orator-incognita": "Orator Incognita"
+    },
+    "Navbar": {
+      "avatar-alt": "{username}'s avatar",
+      "my-profile": "My profile",
+      "settings": "Settings",
+      "sign-out": "Sign out"
+    },
+    "Theme": {
+      "theme": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "SignInPage": {
+    "title": "Sign in",
+    "description": "We only support third-party authentication",
+    "description-tooltip": "This makes it easier for you to sign in, limits the amount of personal data we store, and reduces the risk of security breaches.",
+    "disclaimer": "By signing in, you agree to our <terms>Terms of Service</terms> and <privacy>Privacy Policy</privacy>.",
+    "sign-in-with": "Sign in with {provider}",
+    "error": {
+      "title": "Sign-in error",
+      "description": "An error occurred while signing in. Please try again."
+    }
+  }
+}
