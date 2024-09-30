@@ -30,5 +30,8 @@
       "title": "Sign-in error",
       "description": "An error occurred while signing in. Please try again."
     }
+  },
+  "ChatPage": {
+    "message-info": "{sender, select, user {You} orator {Orator} other {Orator}}, {time}"
   }
 }

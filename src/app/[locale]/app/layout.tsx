@@ -11,7 +11,9 @@ const AppLayout = async ({ children }: NextLayoutProps) => {
   return (
     <div className="flex h-screen items-center flex-col">
       <Header session={session} />
-      <main className="h-[calc(100vh-4rem)] w-full">{children}</main>
+      <main className="h-[calc(100vh-4rem)] w-full overflow-hidden">
+        {children}
+      </main>
     </div>
   );
 };
