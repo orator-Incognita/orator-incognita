@@ -1,7 +1,8 @@
 {
   "Common": {
     "Global": {
-      "orator-incognita": "Orator Incognita"
+      "orator-incognita": "Orator Incognita",
+      "or": "or"
     },
     "Navbar": {
       "avatar-alt": "{username}'s avatar",
@@ -34,5 +35,58 @@
   "ChatPage": {
     "message-info": "{sender, select, user {You} orator {Orator} other {Orator}}, {time}",
     "message-placeholder": "Type a message..."
+  },
+  "DashboardPage": {
+    "title": "Hi, {username}!",
+    "CompassCard": {
+      "title": "Your political compass",
+      "description": "{empty, select, true {Looks like you haven't taken the test yet, click the button below to get started} other {Your very own political compass, based on your test responses}}",
+      "take-test": "{empty, select, true {Take the test} other {Retake the test}}",
+      "take-test-disabled": "You can retake the test {time}"
+    },
+    "StatsCard": {
+      "title": "Your stats",
+      "description": "Here's a summary of your account",
+      "TotalDebates": {
+        "title": "Total debates",
+        "description": "How many people you've debated with"
+      },
+      "TotalTimeSpent": {
+        "title": "Total time spent",
+        "description": "How much time you've spent debating"
+      },
+      "AverageTimeSpent": {
+        "title": "Average time spent",
+        "description": "Average you've spent on a single debate"
+      },
+      "TotalQuestions": {
+        "title": "Total questions",
+        "description": "How many topics you've debated on"
+      }
+    },
+    "FindOratorCard": {
+      "title": "Find an orator",
+      "description": "Find someone to debate with",
+      "find": "Find"
+    },
+    "ReportIssueCard": {
+      "title": "Report an issue",
+      "description": "Something not working as expected or you have a suggestion? Report it on our <github>Github</github>. You know how to fix it? Submit a <pull-request>pull request</pull-request> ✨",
+      "report": "Report an issue on Github"
+    },
+    "PrivateSessionCard": {
+      "title": "Create a private session",
+      "description": "Do you want to debate with your friend or sworn enemy? Create a private session and invite them to join or enter the code they provided",
+      "enter-session-code": "Enter a session code",
+      "join-session": "Join a private session",
+      "create-session": "Create one"
+    },
+    "SupportUsCard": {
+      "title": "Support us",
+      "description": "Despite the project being open-source, we still need your support to maintain our servers (unfortunately, they are not free)",
+      "patreon": "Patreon",
+      "paypal": "PayPal",
+      "contribute": "Contribute on GitHub"
+    }
   }
 }

@@ -3,8 +3,8 @@ import { IconProps } from "@radix-ui/react-icons/dist/types";
 export const GoogleIcon = (props: IconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="128"
-    height="128"
+    width="24"
+    height="24"
     viewBox="0 0 24 24"
     {...props}
   >

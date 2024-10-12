@@ -40,10 +40,12 @@ export const UserNav = ({ session }: Props) => {
   const initials =
     user?.name
       ?.split(" ")
-      .map((n) => n[0])
+      .map((name, idx, arr) =>
+        // Fist and last initial to skip middle names
+        idx === 0 || idx + 1 === arr.length ? name[0] : "",
+      )
       .join("")
-      .slice(0, 2)
-      .toUpperCase() || "?";
+      .toUpperCase() || "?"; // ? If no name is given
 
   return (
     <DropdownMenu>

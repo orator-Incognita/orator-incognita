@@ -13,7 +13,13 @@ import { useRef, useState } from "react";
 import { EmojiPicker } from "../../emoji-picker";
 
 const formSchema = z.object({
-  message: z.string().min(1).max(MAX_MESSAGE_LENGTH),
+  message: z
+    .string({
+      invalid_type_error: "Invalid message",
+      required_error: "Message is required",
+    })
+    .min(1, { message: "Message is required" })
+    .max(MAX_MESSAGE_LENGTH, { message: "Message is too long" }),
 });
 
 export type MessageFormData = z.infer<typeof formSchema>;
