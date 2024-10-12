@@ -44,7 +44,7 @@ export const OratorIncognitaLogo = ({ href }: Props) => {
     return (
       <div className="flex items-center space-x-2">
         <OratorIncognitaIcon />
-        <span className="font-semibold text-lg">{t("orator-incognita")}</span>
+        <span className="text-lg font-semibold">{t("orator-incognita")}</span>
       </div>
     );
   }
@@ -52,7 +52,7 @@ export const OratorIncognitaLogo = ({ href }: Props) => {
   return (
     <Link href={href} className="flex items-center space-x-2">
       <OratorIncognitaIcon />
-      <span className="font-semibold text-lg">{t("orator-incognita")}</span>
+      <span className="text-lg font-semibold">{t("orator-incognita")}</span>
     </Link>
   );
 };

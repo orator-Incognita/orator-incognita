@@ -32,6 +32,7 @@
     }
   },
   "ChatPage": {
-    "message-info": "{sender, select, user {You} orator {Orator} other {Orator}}, {time}"
+    "message-info": "{sender, select, user {You} orator {Orator} other {Orator}}, {time}",
+    "message-placeholder": "Type a message..."
   }
 }

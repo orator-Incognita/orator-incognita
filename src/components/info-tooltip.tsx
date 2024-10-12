@@ -16,7 +16,7 @@ export const InfoTooltip = ({ children }: Props) => {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger>
-          <InfoCircledIcon className="w-4 h-4" />
+          <InfoCircledIcon className="h-4 w-4" />
         </TooltipTrigger>
         <TooltipContent className="max-w-96">{children}</TooltipContent>
       </Tooltip>

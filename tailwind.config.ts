@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import twCssAnimate from "tailwindcss-animate";
 
 const config: Config = {
   darkMode: ["class"],
@@ -40,6 +41,10 @@ const config: Config = {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        tertiary: {
+          DEFAULT: "hsl(var(--tertiary))",
+          foreground: "hsl(var(--tertiary-foreground))",
+        },
         google: {
           DEFAULT: "hsl(var(--google))",
           foreground: "hsl(var(--google-foreground))",
@@ -66,6 +71,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [twCssAnimate],
 };
 export default config;

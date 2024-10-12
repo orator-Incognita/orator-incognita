@@ -1,5 +1,8 @@
-import { Input } from "./components/input";
+"use client";
+import { useEffect, useRef, useState } from "react";
+import { Input, MessageFormData } from "./components/input";
 import { Messages } from "./components/messages";
+import { flushSync } from "react-dom";
 
 export interface ChatMessage {
   id: number;
@@ -57,10 +60,37 @@ const mockMessages: ChatMessage[] = [
 ];
 
 export const Chat = () => {
+  const [messages, setMessages] = useState(mockMessages);
+  const newestMessageRef = useRef<HTMLDivElement>(null);
+
+  const scrollToBottom = (options?: ScrollIntoViewOptions) => {
+    newestMessageRef.current?.scrollIntoView(options);
+  };
+
+  const addMessage = ({ message }: MessageFormData) => {
+    flushSync(() => {
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: Math.max(...prev.map((msg) => msg.id)) + 1,
+          sender: "user",
+          content: message,
+          sentAt: new Date(),
+        },
+      ]);
+    });
+
+    scrollToBottom({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    scrollToBottom({ behavior: "instant" });
+  }, []);
+
   return (
-    <div className="h-[calc(100vh-4.0625rem)] mx-auto border-x shadow-muted shadow-2xl relative flex flex-col">
-      <Messages messages={mockMessages} />
-      <Input />
+    <div className="relative mx-auto flex h-[calc(100vh-4.0625rem)] flex-col border-x shadow-2xl shadow-muted">
+      <Messages messages={messages} newestMessageRef={newestMessageRef} />
+      <Input onMessage={addMessage} />
     </div>
   );
 };

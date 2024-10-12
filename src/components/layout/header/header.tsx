@@ -9,7 +9,7 @@ interface Props {
 }
 
 const Header = ({ session }: Props) => (
-  <div className="border-b w-full">
+  <div className="w-full border-b">
     <div className="flex h-16 items-center px-4">
       <Link href="/app">
         <OratorIncognitaLogo />

@@ -9,7 +9,7 @@ const AppLayout = async ({ children }: NextLayoutProps) => {
   if (!session) return redirect(`/sign-in`);
 
   return (
-    <div className="flex h-screen items-center flex-col">
+    <div className="flex h-screen flex-col items-center">
       <Header session={session} />
       <main className="h-[calc(100vh-4rem)] w-full overflow-hidden">
         {children}
