@@ -2,7 +2,11 @@
   "Common": {
     "Global": {
       "orator-incognita": "Orator Incognita",
-      "or": "or"
+      "or": "or",
+      "server": "Server",
+      "change": "Change",
+      "official": "Official",
+      "community": "Community"
     },
     "Navbar": {
       "avatar-alt": "{username}'s avatar",
@@ -15,6 +19,14 @@
       "light": "Light",
       "dark": "Dark",
       "system": "System"
+    },
+    "Compass": {
+      "economic-axis": "Economic:",
+      "social-axis": "Social:",
+      "auth-left": "Authoritarian Left",
+      "auth-right": "Authoritarian Right",
+      "lib-left": "Libertarian Left",
+      "lib-right": "Libertarian Right"
     }
   },
   "HomePage": {
@@ -67,6 +79,7 @@
     "FindOratorCard": {
       "title": "Find an orator",
       "description": "Find someone to debate with",
+      "server-tooltip": "You'll be matched with someone from the same server, every server has it's own debate language and question topics",
       "find": "Find"
     },
     "ReportIssueCard": {
@@ -87,6 +100,10 @@
       "patreon": "Patreon",
       "paypal": "PayPal",
       "contribute": "Contribute on GitHub"
+    },
+    "RecentDebatesCard": {
+      "title": "Recent debates",
+      "description": "Compass position of up to last 10 orators you've debated with"
     }
   }
 }

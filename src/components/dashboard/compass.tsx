@@ -1,4 +1,5 @@
 "use client";
+import { Compass, CompassPoint } from "../compass";
 import { Button } from "../ui/button";
 import {
   Card,
@@ -9,7 +10,6 @@ import {
   CardTitle,
 } from "../ui/card";
 import { useFormatter, useNow, useTranslations } from "next-intl";
-import Image from "next/image";
 
 interface Props {
   isEmpty?: boolean;
@@ -33,14 +33,10 @@ const CompassCard = ({ isEmpty, isDisabled }: Props) => {
           {t("description", { empty: isEmpty })}
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex items-center justify-center">
-        <Image
-          src="/mocks/compass.png"
-          alt="Political Compass"
-          width={368}
-          height={368}
-          className="drag-none"
-        />
+      <CardContent className="w-full p-4">
+        <Compass className="h-auto w-full">
+          <CompassPoint socialAxis={-0.71} economicAxis={-0.31} />
+        </Compass>
       </CardContent>
       <CardFooter>
         {isDisabled ? (

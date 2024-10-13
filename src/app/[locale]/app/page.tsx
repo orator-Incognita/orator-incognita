@@ -2,6 +2,7 @@ import { auth } from "@/src/auth";
 import { CompassCard } from "@/src/components/dashboard/compass";
 import { FindOratorCard } from "@/src/components/dashboard/find-orator";
 import { PrivateSessionCard } from "@/src/components/dashboard/private-session";
+import { RecentDebatesCard } from "@/src/components/dashboard/recent-debates";
 import { ReportIssueCard } from "@/src/components/dashboard/report-issue";
 import { StatsCard } from "@/src/components/dashboard/stats";
 import { SupportUsCard } from "@/src/components/dashboard/support-us";
@@ -35,7 +36,7 @@ const DashboardPage = async () => {
           <StatsCard />
           <StartSessionSection className="flex lg:hidden" />
           <CompassCard />
-          <CompassCard isEmpty />
+          <RecentDebatesCard />
         </main>
         <aside className="grid gap-6">
           <StartSessionSection className="hidden lg:flex" />

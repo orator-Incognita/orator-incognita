@@ -9,8 +9,8 @@ interface Props {
 }
 
 const Header = ({ session }: Props) => (
-  <div className="sticky top-0 w-full border-b bg-background">
-    <div className="flex h-16 items-center px-4">
+  <div className="sticky top-0 z-10 w-full border-b opacity-90 backdrop-blur-lg">
+    <div className="flex h-16 items-center px-4 transition-colors delay-1000 ease-linear backdrop:bg-background backdrop:opacity-40 backdrop:blur-sm backdrop:saturate-200">
       <Link href="/app">
         <OratorIncognitaLogo />
       </Link>
